@@ -1,0 +1,3 @@
+COPY INTO demo_customer_info
+FROM @AWS_DEMO_STAGE/customer_info.csv
+FILE_FORMAT = (TYPE = 'CSV' SKIP_HEADER = 1 FIELD_OPTIONALLY_ENCLOSED_BY = '"');
